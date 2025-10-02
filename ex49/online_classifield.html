@@ -1,0 +1,125 @@
+<html>
+<head>
+    <title>Online Classifieds Search Form - PHAM VI ANH K234111423</title>
+    <style>
+        body {
+            background-color: #e0ffff; 
+            font-family: 'Times New Roman', serif;
+        }
+        form {
+            width: 650px;
+            margin: auto;
+            background: #b0e0e6;
+            padding: 20px;
+            border: 1px solid #000080;
+        }
+        h1 {
+            color: red;
+            text-align: left;
+        }
+        ol {
+            padding-left: 20px;
+        }
+        li {
+            margin-bottom: 15px;
+        }
+        input[type="text"] {
+            width: 98%;
+        }
+        .options {
+            text-align: left;
+            margin-top: 10px;
+        }
+        .options button {
+            display: inline-block;
+            margin-right: 40px;
+            border: none;
+            background: none;
+            cursor: pointer;
+            text-align: center;
+        }
+        .options img {
+            display: block;
+            margin: auto;
+        }
+    </style>
+    <script>
+        function searchSimulation() {
+            alert("Search simulation executed!");
+            return false; 
+        }
+
+        function openHelp() {
+            window.open("help.html", "_blank", "width=500,height=400");
+            return false;
+        }
+    </script>
+</head>
+<body>
+    <form onsubmit="return searchSimulation()">
+        <h1>Online Classifieds Search Form</h1>
+        <hr/>
+
+        <ol>
+            <li>
+                <b>Search for a classified in the following sections:</b><br>
+                <table>
+                    <tr>
+                        <td><input type="radio" name="section" value="Employment"> Employment</td>
+                        <td><input type="radio" name="section" value="Personal"> Personal</td>
+                    </tr>
+                    <tr>
+                        <td><input type="radio" name="section" value="For Sale"> For Sale</td>
+                        <td><input type="radio" name="section" value="Miscellaneous"> Miscellaneous</td>
+                    </tr>
+                    <tr>
+                        <td><input type="radio" name="section" value="Housing"> Housing</td>
+                        <td><input type="radio" name="section" value="All"> All of the above</td>
+                    </tr>
+                </table>
+            </li>
+
+            <li>
+                <b>Search the following publications:</b><br>
+                <table>
+                    <tr>
+                        <td><input type="checkbox" name="pub" value="Midwest Times" checked> Midwest Times</td>
+                        <td><input type="checkbox" name="pub" value="Modern News"> Modern News</td>
+                        <td><input type="checkbox" name="pub" value="Employment Today"> Employment Today</td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" name="pub" value="Great Lakes Classifieds" checked> Great Lakes Classifieds</td>
+                        <td><input type="checkbox" name="pub" value="Middleton Daily"> Middleton Daily</td>
+                        <td><input type="checkbox" name="pub" value="Casttown Daily News"> Casttown Daily News</td>
+                    </tr>
+                </table>
+            </li>
+
+            <li>
+                <b>From to:</b><br>
+                <input type="date" name="from_date"> to <input type="date" name="to_date">
+            </li>
+
+            <li>
+                <b>Enter a few keywords to describe the classified:</b><br>
+                <input type="text" name="keywords">
+            </li>
+
+            <li>
+                <b>Click one of the options below:</b><br>
+                <div class="options">
+                    <button type="submit">
+                        <img src="Search.gif" width="30" alt="Search"><br>Search
+                    </button>
+                    <button onclick="return openHelp()">
+                        <img src="Help.gif" width="30" alt="Help"><br>Help
+                    </button>
+                    <button type="reset">
+                        <img src="Cancel.gif" width="30" alt="Cancel"><br>Cancel
+                    </button>
+                </div>
+            </li>
+        </ol>
+    </form>
+</body>
+</html>

@@ -1,0 +1,142 @@
+<html>
+    <head>
+        <title>DeLong Enterprises - PHAM VI ANH</title>
+        <style>
+            body 
+            {
+                background-color: palevioletred;
+            }
+
+            table
+            {
+               width: 100%;
+               border-collapse: center;
+            }
+            tr, td
+            {
+                text-align: center;
+            }
+            
+        </style>
+        <script>
+            function submit_exp()
+            {
+                if(confirm('babe, u want to submit?'))
+                {
+                    alert('SUCCESSFULLY SUBMITTED');
+                }
+            }
+            
+            function reset_btn()
+            {
+                if(confirm('oh, u sure u wanna RESET?!'))
+                {
+                    alert('RESET DONE');
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <p align="center">
+            <img src="DeLong.jpg"/>
+        </p>
+        <h2>Travel Expense Report</h2>
+        <hr size="2pt" color="brown"/>
+        <form name="travel_expense_report">
+        <ol>
+            <li><label for="firstname">First Name:<input name="firstname" id="firstname" required/></label>
+                <label for="lastname">Last Name:<input name="lastname" id="lastname" required/></label></li><br/>
+            <li><label for="so_se_number">Social Security Number<input name="so_se_number" id="so_se_number" required/></label></li><br/>
+            <li>Department:
+                <select name="dept" required>
+                    <option>Accounting</option>
+                    <option>IT</option>
+                    <option>Human Resources</option>
+                    <option>Marketing</option>
+                </select>
+            </li><br/>
+            <li>Describe the purpose of your trip:<br/>
+                <textarea style='width: 500px; height: 70px; margin: top 100px;'></textarea>
+            </li><br/>
+            <li>Itemize your travel expenses<br/>
+                <table border="1" cellpadding="1" cellspacing="1">
+                    <thead>
+                        <tr>
+                            <th>Date</th>
+                            <th>Description</th>
+                            <th>Category</th>
+                            <th>Amount</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><input type="date" name="date" id="date" required/></td>
+                            <td><input type="text" name="description" id="description" required/></td>
+                            <td>
+                                <select name="category" id="category" required>
+                                    <option value="op1">Meal</option>
+                                    <option value="op2">Transportation</option>
+                                    <option value="op3">Homestay</option>
+                                    <option value="op4">Food</option>
+                                </select>
+                            </td>
+                            <td><input type="text" name="amount" id="amount" required/></td>
+                        </tr>
+                        <tr>
+                            <td><input type="date" name="date" id="date"/></td>
+                            <td><input type="text" name="description" id="description"/></td>
+                            <td>
+                                <select name="category" id="category">
+                                    <option value="op1">Meal</option>
+                                    <option value="op2">Transportation</option>
+                                    <option value="op3">Homestay</option>
+                                    <option value="op4">Food</option>
+                                </select>
+                            </td>
+                            <td><input type="text" name="amount" id="amount"/></td>
+                        </tr>
+                        <tr>
+                            <td><input type="date" name="date" id="date"/></td>
+                            <td><input type="text" name="description" id="description"/></td>
+                            <td>
+                                <select name="category" id="category">
+                                    <option value="op1">Meal</option>
+                                    <option value="op2">Transportation</option>
+                                    <option value="op3">Homestay</option>
+                                    <option value="op4">Food</option>
+                                </select>
+                            </td>
+                            <td><input type="text" name="amount" id="amount"/></td>
+                        </tr>
+                        <tr>
+                            <td><input type="date" name="date" id="date"/></td>
+                            <td><input type="text" name="description" id="description"/></td>
+                            <td>
+                                <select name="category" id="category">
+                                    <option value="op1">Meal</option>
+                                    <option value="op2">Transportation</option>
+                                    <option value="op3">Homestay</option>
+                                    <option value="op4">Food</option>
+                                </select>
+                            </td>
+                            <td><input type="text" name="amount" id="amount"/></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </li><br/>
+            <li>Have you submitted your receipts?
+                <input type="radio" name="radio" id="yes" required/><label for="radio">Yes</label>
+                <input type="radio" name="radio" id="no" required/><label for="radio">No</label>
+            </li><br/>
+        </ol>
+
+        <div class="button">
+            <button type="submit" onclick="submit_exp()">Submit travel expenses</button>
+            <button type="reset" onclick="reset_btn">Reset</button>
+        </div>
+        
+        <p>Questions? Contact VI ANH</p>
+
+        </form>
+    </body>
+</html>

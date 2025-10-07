@@ -1,0 +1,113 @@
+<html>
+
+<head>
+    <title>
+        Newborn Registration - PHAM VI ANH K234111423
+    </title>
+    <style>
+        h2 {
+            text-align: center;
+        }
+
+        .button {
+            display: flex;
+            justify-content: center;
+        }
+        li{
+            margin-bottom: 15px;
+            margin-left: -22px;
+        }
+        body{
+            background-color: rgb(19, 113, 99);
+            color:aliceblue;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <p align="center">
+        <img src="Logo.gif" />
+    </p>
+    <h2>Newborn Registration</h2>
+    <form name="newborn_registration">
+        <p><label for="date">Date
+                <input type="text" name="date" id="date" />
+            </label></p>
+
+        <ol>
+            <li>
+                <label for="firstname">
+                    Infant's First Name:
+                    <input type="text" name="firstname" id="firstname" />
+                </label>
+                <label for="lastname">
+                    Last:
+                    <input type="text" name="lastname" id="lastname" />
+                </label>
+            </li>
+            <li>
+                <label for="me_rec">
+                    Medical Record #:
+                    <input type="text" name="me_rec" id="me_rec" />
+                </label>
+            </li>
+            <li>
+                <label for="dob">
+                    Date of Birth:
+                    <input type='date' name="dob" id="dob" />
+                </label>
+            </li>
+            <li>
+                <label for="birth_weight">
+                    Birth Weight:
+                    <input type="number" name="birth_weight" id="birth_weight" />
+                </label>
+            </li>
+            <li>
+                <label for="score">
+                    APGAR Score:
+                    <input type="number" name="score" id="score" />
+                </label>
+            </li>
+            <li>
+                <label for="mother_fn">
+                    Mother's First Name:
+                    <input type="text" name="mother_fn" id="mother_fn" />
+                </label>
+                <label for="mother_ln">
+                    Last:
+                    <input type="text" name="mother_ln" id="mother_ln" />
+                </label>
+            </li>
+            <li>
+                <label for="father_fn">
+                    Father's First Name:
+                    <input type="text" name="father_fn" id="father_fn" />
+                </label>
+                <label for="father_ln">
+                    Last:
+                    <input type="text" name="father_ln" id="father_ln" />
+                </label>
+            </li>
+            <li>
+                <label for="physician">Physician(check all that apply)</label>
+                    <select name="physician" id="physician" size="4"
+                    style="vertical-align: top; margin-left: 10px; width: 150px;">
+                        <option value="0">Teo</option>
+                        <option value="1">Ty</option>
+                        <option value="2">Dai bang</option>
+                        <option value="3">Buom buom</option>
+                    </select>
+            </li>
+        </ol>
+
+        <div class="button">
+            <button type="submit" name="register" id="register" onclick="register_btn" style="margin-right: 20px;">Register</button>
+            <button type="reset" name="cancel" id="cancel" onclick="cancel_btn">Cancel</button>
+        </div>
+
+    </form>
+</body>
+
+</html>

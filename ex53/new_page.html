@@ -1,0 +1,80 @@
+<html>
+	<head>
+		<title>
+			New Page from Product - PHAM VI ANH K234111423
+		</title>
+        <style type="text/css">
+            table
+            {
+                border-collapse: collapse;
+                width: 70%;
+                margin: auto;
+            }
+            tr, td
+            {
+                text-align: center;
+            }
+            tfoot td
+            {
+                text-align: right;
+            }
+            
+        </style>
+
+        <script type="text/javascript">
+            function displayFormData()
+            {
+                const params = new URLSearchParams(window.location.search);
+
+                document.getElementById('qty1').innerText = params.get('qty1')
+                document.getElementById('qty2').innerText = params.get('qty2')
+                document.getElementById('qty3').innerText = params.get('qty3')
+                document.getElementById('total').innerText = params.get('total')
+                
+            }
+        </script>
+	</head>
+	<body onload="displayFormData()">
+        <table>
+            <thead>
+                <tr>
+                    <th>Part Number</th>
+                    <th>Description</th>
+                    <th>Price</th>
+                    <th>Quantity</th>
+                    <th>Item Table</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>C112</td>
+                    <td>Mouse</td>
+                    <td>$19.95</td>
+                    <td id="qty1"></td>
+                    <td id="item_table1"></td>
+                </tr>
+                <tr>
+                    <td>B124</td>
+                    <td>Keyboard US</td>
+                    <td>$29.95</td>
+                    <td id="qty2"></td>
+                    <td id="item_table2"></td>
+                </tr>
+                <tr>
+                    <td>U125</td>
+                    <td>USB KingMax</td>
+                    <td>$39.95</td>
+                    <td id="qty3"></td>
+                    <td id="item_table3"></td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr><td colspan="5"><hr/></td></tr>
+                <tr>
+                    <td colspan="4">
+                        <b>Total Value:</b>
+                    </td>
+                    <td id="total"></td>
+                </tr>
+        </table>
+    </body>

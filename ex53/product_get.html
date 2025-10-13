@@ -1,0 +1,107 @@
+<html>
+	<head>
+		<title>
+			Product - PHAM VI ANH K234111423
+		</title>
+
+        <style type="text/css">
+            table
+            {
+                border-collapse: collapse;
+                width: 70%;
+                margin: auto;
+            }
+            tr, td
+            {
+                text-align: center;
+            }
+            tfoot
+            {
+                text-align: right;
+            }
+            
+        </style>
+
+        <script type="text/javascript">
+            function sum()
+            {
+                qty1 = document.getElementById('qty1') 
+                qty2 = document.getElementById('qty2') 
+                qty3 = document.getElementById('qty3') 
+                total = document.getElementById('total')
+                total.innerHTML = qty1+qty2+qty3;
+            }
+        </script>
+
+	</head>
+	<body>
+        <form name="list_of_products" action="new_page.html" method="get" target="_blank">
+		<table>
+            <thead>
+                <tr>
+                    <th>Part Number</th>
+                    <th>Description</th>
+                    <th>Price</th>
+                    <th>Quantity</th>
+                    <th>Item Table</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>C112</td>
+                    <td>Mouse</td>
+                    <td>$19.95</td>
+                    <td>
+                        <input type="number" name="qty" id="qty1"/>
+                    </td>
+                    <td>
+                        <input type="text" name="item_table" id="item_table1"/>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td>B124</td>
+                    <td>Keyboard US</td>
+                    <td>$29.95</td>
+                    <td>
+                        <input type="number" name="qty" id="qty2"/>
+                    </td>
+                    <td>
+                        <input type="text" name="item_table" id="item_table2"/>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>U125</td>
+                    <td>USB KingMax</td>
+                    <td>$39.95</td>
+                    <td>
+                        <input type="number" name="qty" id="qty3"/>
+                    </td>
+                    <td>
+                        <input type="text" name="item_table" id="item_table3"/>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td colspan="5"><hr/></td>
+                </tr>
+
+            </tbody>
+
+            <tfoot>
+                <tr>
+                    <td colspan="4" text-align="right">Total:</td>
+                    <td>
+                        <input type="number" name="total" id="total" readonly/>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="5"></td>
+                    <td><button type="submit" style="background-color: darkorange; color:aliceblue">Sum</button></td>
+                </tr>
+            </tfoot>
+        </table>
+        </form>
+	</body>
+</html>

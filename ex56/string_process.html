@@ -1,0 +1,96 @@
+<html>
+<head>
+    <title>String Process - PHAM VI ANH K234111423</title>
+    <style type="text/css">
+        h1 { text-align: center; }
+        legend {
+            text-align: left;
+            font-size: 30pt;
+            font-weight: bold;
+        }
+        button {
+            width: 100%;
+            padding: 8px;
+            font-size: 1em;
+            cursor: pointer;
+        }
+        table {
+            width: 80%;
+            margin: 0 auto;
+            border-collapse: collapse;
+        }
+        td {
+            padding: 5px;
+            vertical-align: top;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Using String Processing Functions</h1>
+    
+    <form name="my_form">
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>
+                        <fieldset>
+                            <legend>Input Data:</legend>
+                            <textarea rows="8" cols="40" id="ta_input"></textarea>
+                        </fieldset>
+                    </th>
+                    <th>
+                        <fieldset>
+                            <legend>Result:</legend>
+                            <textarea rows="8" cols="40" id="ta_result" readonly></textarea>
+                        </fieldset>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <button type="button" onclick="enter_data()">Enter Data</button>
+                    </td>
+                    <td>
+                        <button type="button" onclick="count_uppercase()">Count the number of uppercase characters</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <button type="button" onclick="uppercase()">Uppercase display</button>
+                    </td>
+                    <td>
+                        <button type="button" onclick="one_word_per_line()">Output one word per line</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <button type="button" onclick="lowercase()">Lowercase display</button>
+                    </td>
+                    <td>
+                        <button type="button" onclick="word_count()">Word count</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <button type="button" onclick="count_lowercase()">Count the number of lowercase characters</button>
+                    </td>
+                    <td>
+                        <button type="button" onclick="print_vow_cons()">Print vowels, consonants</button>
+                    </td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="2">
+                        <button type="button" onclick="process()">W3C's String Processing Website</button>
+                    </td>
+                </tr>
+            </tfoot>
+        </table>
+    </form>
+    
+    <script src="string_process.js"></script>
+</body>
+</html>

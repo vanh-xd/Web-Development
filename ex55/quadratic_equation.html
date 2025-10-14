@@ -1,0 +1,96 @@
+<html>
+<head>
+    
+    <title>Quadratic Equation - PHAM VI ANH</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            
+           
+        }
+        table {
+            border: 1px solid #ccc;
+            border-collapse: collapse;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            width: 50%;
+        }
+        th, td {
+            border: 1px solid;
+            padding: 10px;
+        }
+        th {
+            background-color: #e9f5e9;
+            font-size: 1.2em;
+            text-align: center;
+        }
+        td:first-child {
+            font-weight: bold;
+            text-align: center;
+            width: 30px;
+
+        }
+        input[type="number"] {
+            width: 600px;
+            padding: 5px;
+            
+            border-radius: 3px;
+        }
+        button {
+            padding: 8px 15px;
+            border: 2px solid #fa8a11;
+            background-color: #f0f0f0;
+            cursor: pointer;
+            border-radius: 3px;
+            
+        }
+        button:hover {
+            background-color: #e0e0e0;
+        }
+        #result {
+            color: red; 
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <table border: 1px>
+        <thead>
+            <tr>
+                <th colspan="2">The quadratic equation</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>a:</td>
+                <td><input type="number" name='a' id="a"></td>
+            </tr>
+            <tr>
+                <td>b:</td>
+                <td><input type="number" name="b" id="b"></td>
+            </tr>
+            <tr>
+                <td>c:</td>
+                <td><input type="number" name="c" id="c"></td>
+            </tr>
+            <tr>
+                <td>Result:</td>
+                <td><span id="result"></span></td>
+            </tr>
+            <tr>
+                <td colspan="2" style="text-align: center;">
+                    <button id="solveBtn">Find solution</button>
+                    <button id="clearBtn">Clear</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <script src="quadratic_equa.js"></script>
+
+</body>
+</html>
